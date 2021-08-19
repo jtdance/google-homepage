@@ -145,9 +145,39 @@ button {
     border: none;
 }
 
+.search-input:focus,
+.search-input:hover {
+    border: transparent;
+}
+
 .microphone-icon {
     width: 25px;
     height: 25px;
-    background-color: transparent;
-    border: none;
 }
+
+.search-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.button-search {
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: var(--button-search-background);
+    color: var(--button-search-font);
+    font-size: 14px;
+}
+
+.button-search:hover {
+    border-color: #dadce0;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+}
+
+.button-search:focus {
+    border-color: blue;
+}
+
