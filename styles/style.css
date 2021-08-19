@@ -2,6 +2,7 @@
     --border-color: #ddd;
     --button-search-font: #3c4043;
     --button-search-background: #f8f9fa;
+    --footer-background: #f2f2f2;
     --footer-font: #70757a;
 }
 
@@ -145,11 +146,6 @@ button {
     border: none;
 }
 
-.search-input:focus,
-.search-input:hover {
-    border: transparent;
-}
-
 .microphone-icon {
     width: 25px;
     height: 25px;
@@ -181,3 +177,50 @@ button {
     border-color: blue;
 }
 
+/* Footer */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 2px;
+    padding-top: 15px;
+    border: 1px solid var(--border-color);
+    background: var(--footer-background);
+    color: var(--footer-font);
+    font-size: 14px;
+}
+
+.left-side,
+.right-side, 
+.middle {
+    display: flex;
+}
+
+.right-side {
+    margin-right: 30px;
+}
+
+.footer-link {
+    display: block;
+    padding: 10px 0 10px 30px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.leaf {
+    width: 50px;
+    height: 25px;
+    background-color: var(--footer-background);
+}
+
+.middle {
+    align-items: center;
+    justify-content: center;
+}
